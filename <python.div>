@@ -1,0 +1,29 @@
+    #Created by A.H.A
+    #What we want the program to do
+    #What variables we need
+    #how are we going to do it 
+
+    #Open up a series of web pages
+
+    #We need a list of urls that we will open
+
+    #Open a web page
+    #open up a series of tabs
+
+    import webbrowser
+    import time
+    socialMediaUrls = ["www.google.com", "www.facebook.com"]
+    techUrls = ["www.pcper.com", "www.youtube.com"]
+
+    def open_tabs(url_lists):
+        for element in url_lists:
+            webbrowser.open_new_tabs(element)
+
+    def main():
+        webbrowser.open("www.youtube.com", new=0, autoraise=False)
+        webbrowser.open("www.stackoverflow.com", "www.pcper.com",new=0, autoraise=False)
+        time.sleep(1)
+        open_tabs(socialMediaUrls)
+        open_tabs(techUrls)
+
+    main()
